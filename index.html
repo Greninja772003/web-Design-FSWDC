@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Agency</title>
+</head>
+<body>
+    <div id="main">
+        <div class="box1">
+            <h1>dev.com</h1>
+        </div>
+        <div class="box2">
+            <h1>We are a <span>Creative</span></h1>
+            <h1>Design Agency</h1>
+        </div>
+        <div class="box3">
+            <div class="security">
+                <img src="https://imgs.search.brave.com/OkWwCD2zx806vTRwxOr6ElmmG2QWah9cUL1wO519Yro/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU1/NDM4OTg5L3Bob3Rv/L2NvbXB1dGVyLXNl/Y3VyaXR5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1ONGZa/akdoamZyQnI4OUJC/UmRsaEtXZEZPbndJ/N000S2h4cmR2QXFi/cHk0PQ" alt="" > 
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, maxime soluta eum consectetur ex odio quod hic at ratione nobis iusto, omnis eius dolorem explicabo! Omnis tempore impedit odit, adipisci tenetur accusamus veniam ut quos iure, voluptatum suscipit aspernatur. Ad sunt accusamus error laborum, eos quaerat reprehenderit enim consequuntur libero.</p>
+            </div>
+            <div class="construction">
+                <img src="https://imgs.search.brave.com/dBUPC_UB9s8XOCOpaa24QJQPoJBWK2Tl0MmlFglx2Wc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5zaHV0dGVyc3Rv/Y2suY29tL2ltYWdl/LXBob3RvL2NvbnN0/cnVjdGlvbi1jcmFu/ZS1idWlsZGluZy1z/aXRlLWNvbmNlcHQt/NDUwdy0yNDc4Mjc2/MjY3LmpwZw" alt="" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi, vel aliquam praesentium sit enim suscipit eaque illo molestiae laboriosam eos ab harum odio sapiente similique. Aperiam voluptatem dolores quam neque iure delectus iusto in minus, perferendis enim nisi nemo excepturi illum cum voluptates tempore earum fuga vitae facere pariatur!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Create Develop Design....</p>
+    </footer>
+</body>
+<style>
+   body {
+  font-family: "Poppins", sans-serif;
+ margin: 0 50px;
+ 
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  
+}
+#main {
+  flex: 1;
+}
+    img{
+        width:200px;
+        height: 200px;
+    }
+    h1{
+        font-size: 4em;
+    }
+    span{
+        color: rgb(47, 47, 150);
+    }
+    
+    .box1{
+        color: rgb(233, 233, 52);
+    }
+   .box3{
+    display: flex;
+    justify-content: space-around;
+   }
+    .security, .construction {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 45%;
+}
+
+
+    footer{
+        text-align: right;
+        
+    }
+
+    @media (max-width:680px){
+        
+        .box1 h1{
+            text-align: left;
+        }
+        h1{
+            font-size: 3.5em;
+            text-align: center;
+        }
+        .box2{
+            text-align: center;
+        }
+        .box3{
+            display: block;
+        }
+        .security, .construction {
+            display: block;
+            width: 100%;
+            text-align: justify;
+            margin-bottom: 30px;
+            
+        }
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+            display: inline;
+            object-fit: cover;
+        }
+    }
+
+</style>
+</html>
